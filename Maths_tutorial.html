@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Maths tutorial</title>
+<meta name="viewport" content="width=device-width initial-scale=1.0 user-scalable=yes">
+<style>
+body{
+    font: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+
+#container{
+    
+    width: 90%;
+    
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+#header{
+    
+    padding: 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#brand{
+  flex: 50%;
+  
+}
+h1 a{
+    font-size:55px;
+    font-weight: 100;
+    color: #861BBF;
+    text-decoration: none;
+}
+#searchBox{
+ 
+  flex: 50%;
+  background: -webkit-linear-gradient(#E4F2B9, #B7E953);
+  min-width: 430px;
+  height: 90px;
+  padding: 20px;
+   
+  display: flex;
+  justify-content: center;
+  align-item: center;
+}
+.text{
+    padding:5px;
+    float:left;
+    width:200px;
+    font-size:15px;
+    color:#E36A0C;
+    border: bold;
+    backgound: white url('search.jpg');
+}
+.submit{
+    float: right;
+    padding:5px;
+    font-weight:bold;
+    color: white;
+    background:  #A751D6;
+    font-size: 15px;
+
+}
+ 
+
+#menu a{
+    
+    padding: 0px 30px;
+    height: 30px;
+    border-right: 1px solid #5d12e7;
+}
+#menu{
+  
+    background: linear-gradient(#F8F594, #D5D533);
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+#menu a:last-child{
+     border-right:none;
+
+}
+#menu a{
+      text-decoration: none;
+      font-size: 17px;
+      color: #5d12e7;
+      line-height: 30px;
+       transition: font-size 0.3s ease;
+}
+#menu a:hover , #menu a.active{
+      font-size: 20px;
+      font-weight:bold;
+      color:  #B314DB;     
+}
+@media screen and (max-width:700px){
+    #menu{
+        flex-direction: column;
+        align-content: center;
+    }
+    #menu a{
+        border-right: none;
+    }
+}
+#introduction{
+    background: linear-gradient(#E5F2BB, #B7E952);
+    padding: 30px;
+    margin: 16px 0;
+}
+#introduction h3{
+    font-size: 40px;
+    color:#316901;
+    font-weight: normal;
+}
+#introduction p{
+     font-size: 25px;
+     color:  #628F19;
+     text-align:justify;
+}
+.sidebars{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sidebarwrapper{
+    flex: 50%;
+    padding: 10px;
+}
+.sidebar{
+    height: 100%;
+    min-width: 300px;
+    border: 1px solid #BAF46F;
+    border-radius: 20px;
+    padding: 20px;
+    
+}
+.sidebar h3{
+    font-size:30px;
+    color: #B314DB;
+}
+
+
+}
+#leftsidebar ul li{
+    padding: 4px 0 4px 4px;
+}
+#rightsidebar ul li{
+    padding: 15px 0 15px 15px;
+}
+.sidebar ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color:#5d12e7;
+    transition: font-size 0.3s ease;
+    
+}
+.sidebar ul{
+    padding-top:10px;
+}
+.sidebar ul li a:hover, .sidebar ul li a.active{
+    text-decoration:none;
+    font-size: 50x;
+    color:#B314DB;
+    font-weight:bold;
+}
+.footer{
+    background: linear-gradient(#F6F390, #D5D533);
+    height: 60px;
+    margin-top: auto;
+    padding: 10px 30px;
+}
+</style>
+
+</head>
+<body>
+<div id="container" >
+    <div id="header">
+        <div id="brand">
+        <h1> <a href="#">Maths the Fun Way</a></h1>
+        </div>
+        <div id="searchBox">
+           <form method="get">
+           <input type="text" class="text">
+           <input type="submit" value="Search a topic" class="submit">
+           
+           </form>
+        </div>
+    </div>
+    <div class="clear">
+</div>
+
+    <div id="menu">
+        
+        <a href="#" class="active">HOME</a>
+        <a href="#">ONLINE TUTORIALS</a>
+        <a href="#">GET A PRIVATE TUTOR</a>
+        <a href="#">SIGN UP</a>
+        <a href="#">CONTACT US</a>
+    </div>
+    <div id="introduction">
+        <h3> Do you need help with Maths? </h3>
+        <p>Our website uses an interactive methodology of teaching Maths using the latest web technologies. Your learning experience with us is guaranteed to be intuitive and fun. You will have fun while learning. This is the secret of our outstanding results. 
+            Check reviews from our students.
+        </p>
+    </div>
+
+     <div class="sidebars">
+     <div class="sidebarwrapper">
+        <div id="leftsidebar" class="sidebar">
+          <h3>Go to:</h3>
+            <ul>
+                <li><a href="#">Year 1 Free Lessons.</a></li>
+                <li><a href="#">Year 2 Free Lessons.</a></li>
+               <li><a href="#">Year 3 Free Lessons.</a></li>
+               <li><a href="#">Year 4 Free Lessons.</a></li>
+               <li><a href="#">Year 5 Free Lessons.</a></li>
+               <li><a href="#">Year 6 Free Lessons.</a></li>
+               <li><a href="#">Year 7 Free Lessons.</a></li>
+               <li><a href="#">Year 8 Free Lessons.</a></li>
+               <li><a href="#">Year 9 Free Lessons.</a></li>
+               <li><a href="#">Year 10 Free Lessons.</a></li>
+               <li><a href="#">Year 11 Free Lessons.</a></li>
+               <li><a href="#">Year 12 Free Lessons.</a></li>
+           </ul>
+     </div>
+     </div>
+     <div class="sidebarwrapper">
+        <div id="rightsidebar" class="sidebar">
+           <h3>Why us?</h3>
+            <ul>
+               <li><a href="#">Our teachers are available any time.</a></li>
+               <li><a href="#">Available on laptop, Tablets and Phones.</a></li>
+                <li><a href="#">30 day Money Back Guarantee.</a></li>
+                <li><a href="#">Interactive games for an enjoyable learning experience.</a></li>
+                <li><a href="#">Learn at your own pace.</a></li>
+                <li><a href="#">Complete curriculum.</a></li>
+          </ul>
+
+     </div>
+     </div>
+        
+    
+     </div>
+           <footer class="footer">
+                <div>
+                    <p>Company name. Copyright &copy; 2010-2015</p>
+                </div>
+            </footer>
+</div>
+
+     
+</body>
+
+
+
+</html>
